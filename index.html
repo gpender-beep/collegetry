@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+    The head section contains information about the webpage
+    that the browser needs but the user does not directly see.
+    It includes page settings like character encoding, responsive
+    behavior for phones, the page title, and the link to the CSS file.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Just Trying To Pass</title>
+
+    <!-- 
+    This line connects the HTML page to the external CSS stylesheet.
+    The browser loads the file located inside the css folder and
+    applies all styling rules to this page.
+    -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+<!-- ================= HEADER SECTION ================= -->
+
+<header>
+
+    <!-- 
+    The header section is placed at the top of the webpage and usually
+    contains branding, titles, or introductory content. This is the
+    first thing visitors see when they land on the page.
+    -->
+
+    <nav>
+        <div class="container navbar">
+
+            <!-- 
+            The logo or website name is placed inside the navigation bar
+            so users always know what site they are on. It also helps
+            establish identity and branding for the webpage.
+            -->
+            <div class="logo">The Good Ole College Try</div>
+
+
+            <!-- 
+            This checkbox is used for responsive navigation menus.
+            When viewed on smaller screens like phones, it allows
+            the hamburger menu to toggle the navigation links.
+            -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <!-- 
+            The unordered list contains the navigation links for the site.
+            Each link jumps to a section on the page using ID anchors.
+            This helps users quickly move between different sections.
+            -->
+            <ul class="nav-links">
+
+                <li><a href="#Homework">Homework</a></li>
+                <li><a href="#Podcast">Podcast</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 
+    This text area acts like a hero section or introduction.
+    It briefly explains what the website is about so visitors
+    understand the purpose of the page immediately.
+    -->
+    <div class="header_text">
+        <h1>Homework & Podcast Hub</h1>
+        <p>A place for my coursework and creative content.</p>
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main>
+
+<!-- ===== Homework Section ===== -->
+
+<section id="Homework">
+
+    <!-- 
+    Sections organize the webpage into logical areas.
+    The ID attribute allows navigation links to scroll
+    directly to this part of the page when clicked.
+    -->
+
+    <div class="container">
+
+        <h2>Homework Assignments</h2>
+
+        <!-- 
+        Images are stored in the images folder and loaded
+        using the src attribute. This keeps project files
+        organized so images, CSS, and HTML are separated.
+        -->
+        <img src="images/homework.jpg" class="section-image" alt="Homework Image">
+
+
+        <!-- 
+        This list contains links to homework assignments.
+        Each link can point to either another webpage
+        within the project or an external hosted site.
+        -->
+        <ul>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson1/index.html">Lesson 1</a></li>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson2/index.html">Lesson 2</a></li>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson3/index.html">Lesson 3</a></li>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson4/index.html">Lesson 4</a></li>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson5/index.html">Lesson 5</a></li>
+            <li><a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson6/index.html">Lesson 6</a></li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===== Podcast Section ===== -->
+
+<section id="Podcast">
+
+    <div class="container">
+
+        <h2>Podcast Episodes</h2>
+
+        <!-- 
+        This image visually represents the podcast section.
+        Using images helps break up text and makes the
+        webpage more engaging for visitors.
+        -->
+        <img src="images/podcast.jpg" class="section-image" alt="Podcast Image">
+
+
+        <!-- 
+        Articles are used to contain individual pieces of content.
+        Each podcast episode is structured as its own article
+        so the layout stays organized and easy to read.
+        -->
+        <article>
+            <h3>Spring Roots & War Drums: Grounding Yourself While the World Burns</h3>
+            <p>Spring is the season of renewal. The earth wakes up, flowers push through the soil, and life reminds us that growth always follows the coldest seasons. But while nature is grounding itself in rebirth, the world around us seems to be moving in the opposite direction.</p>
+            <a href="https://open.spotify.com/episode/6nnCjHFOIydrUYgSjZ3H68?si=M8T1MT9QQQq4otNAoX0dOg">Listen Now</a>
+        </article>
+
+
+        <article>
+            <h3>Spring Roots & War Drums: Grounding Yourself While the World Burns</h3>
+            <p>Spring is the season of renewal. The earth wakes up, flowers push through the soil, and life reminds us that growth always follows the coldest seasons. But while nature is grounding itself in rebirth, the world around us seems to be moving in the opposite direction.</p>
+            <a href="https://www.patreon.com/posts/spring-roots-war-152273231?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Listen Now</a>
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===== ABOUT SECTION ===== -->
+
+<section id="About">
+
+    <div class="container about">
+
+        <!-- 
+        This section introduces the website owner.
+        It usually includes a picture and short
+        biography to give visitors more context.
+        -->
+
+        <div>
+            <img src="images/profile.jpg" alt="Profile Picture">
+        </div>
+
+        <div>
+            <h2>About Me</h2>
+            <p>
+                I am currently learning HTML and CSS while building my
+                own responsive website. This project allows me to
+                practice web development skills while sharing my work.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===== CONTACT SECTION ===== -->
+
+<section id="Contact">
+
+    <div class="container contact">
+
+        <!-- 
+        Embedded maps use an iframe element.
+        This allows websites like Google Maps
+        to display inside the page.
+        -->
+       <div>
+    <!--
+    The iframe element is used to embed external content inside a webpage.
+    In this case it will display a Google Map showing a specific location.
+    The src attribute contains the URL of the map that will appear inside the frame.
+    -->
+    
+    <iframe 
+        src="https://maps.app.goo.gl/2Ksc1z7km5GyrppM7"
+        width="100%"
+        height="300"
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+</div>
+
+
+        <!-- 
+        The contact form allows users to send a message.
+        Input fields collect the visitor's name, email,
+        and message before submitting the form.
+        -->
+        <div>
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <!-- 
+    The footer appears at the bottom of the webpage.
+    It usually contains copyright information,
+    extra navigation links, or social media links.
+    -->
+
+    <div class="container footer-container">
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Tutorials</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="https://www.patreon.com/posts/spring-roots-war-152273231?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Patreon</a></li>
+                <li><a href="https://open.spotify.com/episode/6nnCjHFOIydrUYgSjZ3H68?si=M8T1MT9QQQq4otNAoX0dOg">Spotify</a></li>
+                <li><a href="https://www.instagram.com/formelanatedpeople/">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@black_propaganda?is_from_webapp=1&sender_device=pc">TikTok</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p>© 2026 Gerald Pender | Built with HTML5 & CSS3</p>
+
+</footer>
+
+
+</body>
+</html>
