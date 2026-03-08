@@ -1,0 +1,509 @@
+/* =========================
+GLOBAL RESET
+========================= */
+
+/*
+This reset removes default spacing that browsers automatically add
+to elements like headings, paragraphs, and lists. Different browsers
+apply different default styles, so resetting them helps keep layouts
+consistent across Chrome, Edge, Safari, and Firefox.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+GLOBAL PAGE STYLES
+========================= */
+
+/*
+The body selector applies styles to the entire webpage.
+It defines the default font, spacing between lines,
+and the overall background color of the page.
+*/
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    background-color:#f5e8e8;
+}
+
+
+/*
+The container class is used to keep content centered
+and prevent it from stretching across the entire screen.
+It also limits the maximum width so the page remains readable
+on very large monitors.
+*/
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+/*
+The header section contains the navigation bar and
+the hero banner text at the top of the website.
+This background color creates a visual separation
+between the header and the rest of the page.
+*/
+
+header{
+    background:#222;
+    color:white;
+}
+
+
+/*
+The header_text area acts as a hero banner.
+A background image is displayed and scaled so it
+covers the entire section regardless of screen size.
+*/
+
+.header_text{
+    background-image:url(../images/header_bk.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:75vh;
+    text-align:center;
+}
+
+
+/*
+These styles control the appearance of the main
+headline displayed in the hero section.
+Large text helps capture the visitor's attention.
+*/
+
+header h1{
+    padding-top:200px;
+    color:rgb(3, 3, 3);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+}
+
+
+/*
+This paragraph is the subtitle under the main title.
+It provides additional context about the website.
+*/
+
+header p{
+    color:rgb(2, 248, 84);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:35px;
+}
+
+
+/* =========================
+NAVIGATION BAR
+========================= */
+
+/*
+The navbar class uses Flexbox to arrange the logo
+and navigation links in a horizontal row. Flexbox
+makes it easier to align items and control spacing.
+*/
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+
+/*
+The logo represents the name or identity of the website.
+Styling it larger and bold helps it stand out inside
+the navigation bar.
+*/
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+
+/*
+The navigation links are displayed horizontally using flex.
+The list-style property removes bullet points from the menu.
+*/
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+
+.nav-links li{
+    position:relative;
+}
+
+
+/*
+These styles control how the navigation links appear.
+Padding increases clickable area and improves usability.
+*/
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+}
+
+
+/*
+The hover effect is a dynamic pseudo-class.
+It changes the background color when the mouse moves
+over a navigation link, providing visual feedback.
+*/
+
+.nav-links a:hover{
+    background:#d4eb06;
+}
+
+
+/* =========================
+HAMBURGER MENU
+========================= */
+
+/*
+The menu-toggle checkbox is hidden because it is only
+used by CSS to control whether the mobile navigation
+menu is open or closed.
+*/
+
+.menu-toggle{
+    display:none;
+}
+
+
+/*
+The hamburger icon is hidden on desktop screens
+but will appear on smaller screens through the
+responsive design section later in the file.
+*/
+
+.hamburger{
+    display:none;
+    font-size:26px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
+/* =========================
+MAIN CONTENT
+========================= */
+
+/*
+The main element contains the primary content of the page.
+Extra padding creates space between the content and edges
+of the browser window.
+*/
+
+main{
+    padding:20px;
+}
+
+
+/*
+Each section is styled like a card with a white background,
+rounded corners, and a shadow. This helps visually separate
+content blocks on the page.
+*/
+
+section{
+    background:white;
+    padding:60px 20px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+h2{
+    margin-bottom:20px;
+}
+
+
+/* =========================
+SECTION IMAGES
+========================= */
+
+/*
+Images are made responsive so they resize based
+on screen width. The object-fit property prevents
+images from stretching or becoming distorted.
+*/
+
+.section-image{
+    width:100%;
+    max-height:300px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+
+/* =========================
+ABOUT SECTION
+========================= */
+
+/*
+Flexbox is used to place the image and text side-by-side.
+The gap property adds space between the two columns.
+*/
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+
+/*
+The image is limited to a maximum width so it does not
+become too large on bigger screens.
+*/
+
+.about img{
+    width:100%;
+    max-width:400px;
+    border-radius:10px;
+}
+
+
+/* =========================
+CONTACT SECTION
+========================= */
+
+/*
+The contact section also uses Flexbox to place
+the Google Map and the contact form side-by-side.
+*/
+
+.contact{
+    display:flex;
+    gap:40px;
+    background-color:burlywood;
+}
+
+
+/*
+The iframe contains the embedded Google Map.
+Width is set to 100% so it fills the available space.
+*/
+
+.contact iframe{
+    width:100%;
+    height:300px;
+    border:0;
+}
+
+
+/* =========================
+CONTACT FORM
+========================= */
+
+/*
+The form uses column layout so the input fields
+stack vertically instead of appearing side-by-side.
+*/
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+
+/*
+These styles control the appearance of input fields
+and the textarea where users type their message.
+*/
+
+form input,
+form textarea{
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+}
+
+
+/*
+The button styling makes the submit button match
+the color scheme of the website.
+*/
+
+form button{
+    padding:10px;
+    background:#222;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+
+form button:hover{
+    background:#444;
+}
+
+
+/* =========================
+LINKS
+========================= */
+
+/*
+This style controls the appearance of links across
+the entire webpage.
+*/
+
+a{
+    color:#0077cc;
+}
+
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+/*
+The footer appears at the bottom of the webpage
+and usually contains additional navigation links,
+resources, and social media connections.
+*/
+
+footer{
+    background:#222;
+    color:#fff;
+    padding:40px 0;
+    text-align:center;
+}
+
+
+/*
+The footer container organizes links into columns.
+Flexbox makes the columns responsive and evenly spaced.
+*/
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+/*
+Each footer column contains a category of links
+such as resources or social media.
+*/
+
+.footer-col{
+    flex:1;
+    min-width:200px;
+}
+
+
+.footer-col ul{
+    list-style:none;
+}
+
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+
+.footer-col a{
+    color:#fff;
+    text-decoration:none;
+}
+
+
+.footer-col a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+/*
+Responsive design allows the website to adapt to
+smaller screen sizes such as phones and tablets.
+This section activates when the screen width is
+768 pixels or smaller.
+*/
+
+@media(max-width:768px){
+
+    /*
+    The navigation menu becomes vertical on small screens.
+    It is hidden by default until the hamburger icon is clicked.
+    */
+
+    .nav-links{
+        flex-direction:column;
+        position:absolute;
+        background:#222;
+        width:100%;
+        top:60px;
+        left:0;
+        display:none;
+    }
+
+    .nav-links li{
+        text-align:center;
+    }
+
+    /*
+    When the hidden checkbox is checked, the navigation menu
+    becomes visible. This technique is commonly called the
+    "CSS checkbox hack" for responsive menus.
+    */
+
+    .menu-toggle:checked + .hamburger + .nav-links{
+        display:flex;
+    }
+
+    /*
+    The hamburger icon becomes visible on small screens
+    so users can open the mobile navigation menu.
+    */
+
+    .hamburger{
+        display:block;
+    }
+
+    /*
+    These sections stack vertically instead of side-by-side
+    so the layout fits properly on narrow screens.
+    */
+
+    .about,
+    .contact{
+        flex-direction:column;
+    }
+
+}
