@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 
+    The head section contains information about the webpage
+    that the browser needs but the user does not directly see.
+    It includes page settings like character encoding, responsive
+    behavior for phones, the page title, and the link to the CSS file.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Just Trying To Pass</title>
+
+    <!-- 
+    This line connects the HTML page to the external CSS stylesheet.
+    The browser loads the file located inside the css folder and
+    applies all styling rules to this page.
+    -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+
+<body>
+
+<!-- ================= HEADER SECTION ================= -->
+
+<header>
+
+    <!-- 
+    The header section is placed at the top of the webpage and usually
+    contains branding, titles, or introductory content. This is the
+    first thing visitors see when they land on the page.
+    -->
+
+    <nav>
+        <div class="container navbar">
+
+            <!-- 
+            The logo or website name is placed inside the navigation bar
+            so users always know what site they are on. It also helps
+            establish identity and branding for the webpage.
+            -->
+            <div class="logo">The Good Ole College Try</div>
+
+
+            <!-- 
+            This checkbox is used for responsive navigation menus.
+            When viewed on smaller screens like phones, it allows
+            the hamburger menu to toggle the navigation links.
+            -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+
+            <!-- 
+            The unordered list contains the navigation links for the site.
+            Each link jumps to a section on the page using ID anchors.
+            This helps users quickly move between different sections.
+            -->
+
+            <ul class="nav-links">
+
+                <li><a href="#Homework">Homework</a></li>
+                <li><a href="#Podcast">Podcast</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+
+                <!-- ================= DROPDOWN MENU ================= -->
+
+                <!--
+                This list item contains a dropdown menu. The parent link
+                represents the category "Advanced Coursework". When the
+                user hovers over or clicks it (depending on CSS styling),
+                additional links will appear below it.
+                -->
+
+                <li class="dropdown">
+
+                    <a href="#">Advanced Coursework ▾</a>
+
+                    <!--
+                    This nested unordered list holds the dropdown links.
+                    Each item inside this list points to coursework pages
+                    or projects related to more advanced class work.
+                    -->
+
+                    <ul class="dropdown-menu">
+
+                        <!--
+                        Each list item inside the dropdown contains a link
+                        to a specific coursework assignment or project.
+                        These can link to external hosted pages or internal
+                        pages inside the same project folder.
+                        -->
+
+                        <li>
+                            <a href="https://formelanatedpeople.webhostingforstudents.com/classes/1510/lesson7/index.html">
+                                Lesson 7
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                Lesson 8
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                Lesson 9
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                Lesson 10
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 
+    This text area acts like a hero section or introduction.
+    It briefly explains what the website is about so visitors
+    understand the purpose of the page immediately.
+    -->
+    <div class="header_text">
+        <h1>Homework & Podcast Hub</h1>
+        <p>A place for my coursework and creative content.</p>
+    </div>
+
+</header>
