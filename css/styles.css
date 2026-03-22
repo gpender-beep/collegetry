@@ -1,0 +1,489 @@
+/* =========================
+GLOBAL RESET
+========================= */
+
+/*
+This reset removes default spacing and ensures consistency across browsers.
+The box-sizing rule makes width and height calculations easier to control.
+This is a standard best practice in modern CSS layouts.
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+GLOBAL PAGE STYLES
+========================= */
+
+/*
+The body sets the overall look and feel of the page.
+Font, spacing, and background color create a consistent design foundation.
+These styles apply to all elements unless overridden later.
+*/
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    background-color:#f5e8e8;
+}
+
+
+/*
+The container keeps content centered and readable.
+It prevents elements from stretching too wide on large screens.
+This improves layout balance and user experience.
+*/
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    background:#222;
+    color:white;
+}
+
+
+/*
+The header_text acts as a hero section.
+A background image creates visual impact and draws attention immediately.
+This helps establish branding and first impressions.
+*/
+
+.header_text{
+    background-image:url(../images/header_bk.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:75vh;
+    text-align:center;
+}
+
+
+header h1{
+    padding-top:200px;
+    color:rgb(3, 3, 3);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:100px;
+}
+
+
+header p{
+    color:rgb(2, 248, 84);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:35px;
+}
+
+
+/* =========================
+NAVIGATION BAR
+========================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+
+/*
+Navigation links are displayed horizontally.
+Flexbox makes alignment and spacing easier to control.
+*/
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+
+.nav-links li{
+    position:relative;
+}
+
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+}
+
+
+.nav-links a:hover{
+    background:#d4eb06;
+}
+
+
+/* =========================
+DROPDOWN MENU
+========================= */
+
+/*
+Dropdown menus allow grouping of related links.
+They improve organization by reducing clutter in the main navigation.
+*/
+
+.dropdown{
+    position:relative;
+}
+
+
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#222;
+    list-style:none;
+    min-width:200px;
+    display:none;
+}
+
+
+.dropdown-menu li a{
+    padding:10px 15px;
+    color:#fff;
+    display:block;
+}
+
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+
+/* =========================
+HAMBURGER MENU
+========================= */
+
+/*
+The hamburger menu is used for mobile responsiveness.
+It allows users to toggle navigation visibility on smaller screens.
+*/
+
+.menu-toggle{
+    display:none;
+}
+
+
+.hamburger{
+    display:none;
+    font-size:26px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
+/* =========================
+MAIN CONTENT
+========================= */
+
+main{
+    padding:20px;
+}
+
+
+/*
+Each section is styled as a card-like container.
+Spacing, shadows, and rounded corners improve readability.
+*/
+
+section{
+    background:white;
+    padding:60px 20px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+h2{
+    margin-bottom:20px;
+}
+
+
+/* =========================
+PODCAST EMPHASIS (NEW)
+========================= */
+
+/*
+The podcast section is visually emphasized to draw user attention.
+A darker background and accent border make it stand out from other sections.
+This helps prioritize your podcast as the main feature of the page.
+*/
+
+#Podcast{
+    background:#111;
+    color:#fff;
+    border-left:8px solid #00ff88;
+}
+
+
+/*
+Podcast articles are styled like featured cards.
+This improves readability and makes each episode feel important.
+*/
+
+#Podcast article{
+    background:#1e1e1e;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    transition:transform 0.3s ease;
+}
+
+
+#Podcast article:hover{
+    transform:scale(1.03);
+}
+
+
+/*
+Podcast links are styled as buttons to increase engagement.
+Buttons stand out more than regular links and encourage clicks.
+*/
+
+#Podcast a{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#00ff88;
+    color:#000;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+
+#Podcast a:hover{
+    background:#00cc6a;
+}
+
+
+/* =========================
+HOMEWORK (DE-EMPHASIZED)
+========================= */
+
+/*
+The homework section is visually simplified since it is no longer the focus.
+Reducing emphasis helps guide users toward the podcast content instead.
+*/
+
+#Homework{
+    opacity:0.85;
+}
+
+
+/* =========================
+SECTION IMAGES
+========================= */
+
+.section-image{
+    width:100%;
+    max-height:300px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+
+/* =========================
+ABOUT SECTION
+========================= */
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+
+.about img{
+    width:100%;
+    max-width:400px;
+    border-radius:10px;
+}
+
+
+/* =========================
+CONTACT SECTION
+========================= */
+
+.contact{
+    display:flex;
+    gap:40px;
+    background-color:burlywood;
+}
+
+
+.contact iframe{
+    width:100%;
+    height:300px;
+    border:0;
+}
+
+
+/* =========================
+CONTACT FORM
+========================= */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+
+form input,
+form textarea{
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+}
+
+
+form button{
+    padding:10px;
+    background:#222;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+
+form button:hover{
+    background:#444;
+}
+
+
+/* =========================
+LINKS
+========================= */
+
+a{
+    color:#0077cc;
+}
+
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#222;
+    color:#fff;
+    padding:40px 0;
+    text-align:center;
+}
+
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+.footer-col{
+    flex:1;
+    min-width:200px;
+}
+
+
+.footer-col ul{
+    list-style:none;
+}
+
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+
+.footer-col a{
+    color:#fff;
+    text-decoration:none;
+}
+
+
+.footer-col a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+    .nav-links{
+        flex-direction:column;
+        position:absolute;
+        background:#222;
+        width:100%;
+        top:60px;
+        left:0;
+        display:none;
+    }
+
+    .nav-links li{
+        text-align:center;
+    }
+
+    /*
+    This checkbox hack allows toggling navigation visibility.
+    It is commonly used in CSS-only responsive menus.
+    */
+
+    .menu-toggle:checked + .hamburger + .nav-links{
+        display:flex;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    /*
+    Dropdown menus switch to static positioning on mobile.
+    This ensures they stack properly in a vertical layout.
+    */
+
+    .dropdown-menu{
+        position:static;
+        display:none;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display:block;
+    }
+
+    .about,
+    .contact{
+        flex-direction:column;
+    }
+
+}
